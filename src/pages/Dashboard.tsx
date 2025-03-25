@@ -4,7 +4,7 @@ import StatusBadge from '../components/StatusBadge';
 
 const Dashboard: React.FC = () => {
   const [currentStep, setCurrentStep] = useState<number>(0);
-  const [freeTranscriptionsLeft, setFreeTranscriptionsLeft] = useState<number>(3);
+  const [freeTranscriptionsLeft, _setFreeTranscriptionsLeft] = useState<number>(3);
   
   // Mock data for projects
   const projects: ProjectData[] = [
